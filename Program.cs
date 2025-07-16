@@ -35,11 +35,11 @@
         }
         static string DetermineOrdinal(int num)
         {
-            if (num != 13 && num % 10 == 3)
+            if (num % 100 != 13 && num % 10 == 3)
                 return "rd";
-            else if (num != 12 && num % 10 == 2)
+            else if (num % 100 != 12 && num % 10 == 2)
                 return "nd";
-            else if (num != 11 && num % 10 == 1)
+            else if (num % 100 != 11 && num % 10 == 1)
                 return "st";
             else
                 return "th";
