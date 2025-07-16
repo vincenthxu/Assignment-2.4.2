@@ -15,7 +15,7 @@
             }
 
             (int index, int value) result = FindMax(nums);
-            Console.WriteLine($"The largest number in the array is the {result.index + 1}{DetermineOrdinal(result.index)} number '{result.value}' at index {result.index}.");
+            Console.WriteLine($"The largest number in the array is the {result.index + 1}{DetermineOrdinal(result.index + 1)} number '{result.value}' at index {result.index}.");
         }
         // For an int[] argument of non-zero size, return the max value and its index.
         static (int index, int value) FindMax(int[] nums)
